@@ -1,0 +1,49 @@
+html {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.border{
+  border: 1px solid red;
+}
+/*start Scrollbar*/
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*end Scrollbar*/
+@media (max-width: 900px) {
+  .myList {
+    position: fixed;
+    background-color: #121212;
+    top: 59px;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+  }
+}
